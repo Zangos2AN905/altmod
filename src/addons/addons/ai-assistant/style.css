@@ -1,0 +1,234 @@
+/* AI Assistant Floating Panel Styles */
+
+.sa-ai-assistant-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    margin: 0 8px;
+    background: #444;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.sa-ai-assistant-btn:hover {
+    background: #555;
+}
+
+.sa-ai-assistant-btn-icon {
+    font-size: 18px;
+}
+
+.sa-ai-assistant-btn-text {
+    font-size: 13px;
+}
+
+/* Floating Modal (non-blocking) */
+.sa-ai-assistant-modal {
+    display: none;
+    position: fixed;
+    width: 380px;
+    height: 420px;
+    min-width: 280px;
+    min-height: 200px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Header - draggable */
+.sa-ai-assistant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: #252525;
+    border-bottom: 1px solid #333;
+    cursor: grab;
+    user-select: none;
+}
+
+.sa-ai-assistant-header:active {
+    cursor: grabbing;
+}
+
+.sa-ai-assistant-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sa-ai-assistant-header-btns {
+    display: flex;
+    gap: 6px;
+}
+
+.sa-ai-assistant-minimize,
+.sa-ai-assistant-close {
+    background: #333;
+    border: none;
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 4px;
+    line-height: 1;
+}
+
+.sa-ai-assistant-minimize:hover,
+.sa-ai-assistant-close:hover {
+    color: #fff;
+    background: #444;
+}
+
+/* Body */
+.sa-ai-assistant-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sa-ai-assistant-body.sa-ai-minimized {
+    display: none;
+}
+
+/* Messages */
+.sa-ai-assistant-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sa-ai-assistant-message {
+    padding: 10px 12px;
+    border-radius: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+.sa-ai-assistant-message-user {
+    background: #444;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.sa-ai-assistant-message-assistant {
+    background: #2a2a2a;
+    color: #eee;
+    align-self: flex-start;
+    border: 1px solid #333;
+}
+
+.sa-ai-assistant-message-system {
+    background: #3a2020;
+    color: #f88;
+    align-self: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Input Area */
+.sa-ai-assistant-input-area {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #333;
+    background: #1e1e1e;
+}
+
+.sa-ai-assistant-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #0a0a0a;
+    color: #fff;
+    font-size: 13px;
+}
+
+.sa-ai-assistant-input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.sa-ai-assistant-input::placeholder {
+    color: #666;
+}
+
+.sa-ai-assistant-send {
+    padding: 10px 18px;
+    background: #555;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.sa-ai-assistant-send:hover {
+    background: #666;
+}
+
+/* Status */
+.sa-ai-assistant-status {
+    padding: 4px 10px 8px;
+    font-size: 11px;
+    color: #888;
+    text-align: center;
+    min-height: 16px;
+}
+
+/* Resize Handle */
+.sa-ai-assistant-resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    cursor: nwse-resize;
+    background: linear-gradient(135deg, transparent 50%, #444 50%);
+    border-radius: 0 0 12px 0;
+}
+
+.sa-ai-assistant-resize-handle.sa-ai-minimized {
+    display: none;
+}
+
+/* Insert Blocks Button */
+.sa-ai-assistant-insert-btn {
+    display: block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: #3a5a3a;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.sa-ai-assistant-insert-btn:hover {
+    background: #4a6a4a;
+}
+
+.sa-ai-assistant-insert-btn:disabled {
+    background: #2a3a2a;
+    cursor: default;
+}

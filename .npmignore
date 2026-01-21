@@ -1,0 +1,16 @@
+
+# NPM
+/node_modules
+npm-*
+
+# Testing
+/.nyc_output
+/coverage
+/test
+
+# Build
+/.opt-in
+/build
+
+# generated translation files
+/translations
