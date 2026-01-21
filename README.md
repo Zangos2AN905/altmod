@@ -1,10 +1,11 @@
-scratch-gui modified for use in [TurboWarp](https://turbowarp.org/) then modified for use in [AltMod](https://studio.penguinmod.com) 😀
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/PenguinMod/penguinmod.github.io/)
+AltMod's modified scratch-gui for use in [AltMod](https://studio.penguinmod.com) 😀
+<!-- [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/PenguinMod/penguinmod.github.io/)
 ## Setup
 
 See https://docs.turbowarp.org/development/getting-started to setup the complete TurboWarp environment.
 
 If you just want to play with the GUI then it's the same process as upstream scratch-gui.
+-->
 
 ## License
 
